@@ -112,6 +112,10 @@ p {
 
 /*Responsive atributes*/
 @media (max-width: 375px) {
+main {
+    height: auto;
+}
+
     .container {
         flex-direction: column;
     }
