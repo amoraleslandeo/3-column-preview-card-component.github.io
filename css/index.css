@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 /*Styles*/
-* {  box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     font-size: 15px;
     font-family: 'Lexend Deca';
     font-weight: 400;
-    margin: 0px;box-sizing: content-box;
+    margin: 0px;
 }
 
 h2 {
@@ -31,6 +33,7 @@ p {
 .container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /*Cards*/
@@ -92,7 +95,26 @@ p {
     color: hsl(179, 100%, 13%);
 }
 
+/*Responsive atributes*/
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sedans {
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    .luxury {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .box {
+        height: auto;
+        width: 327px;
+    }
 
 
-
-
+}
