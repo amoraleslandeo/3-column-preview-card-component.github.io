@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 /*Styles*/
+
+/*Force autoadjustment of the divs*/
 * {
     box-sizing: border-box;
+}
+
+/*center page vertical*/
+html, body {
+    height: 100%;
 }
 
 body {
@@ -11,6 +18,14 @@ body {
     font-family: 'Lexend Deca';
     font-weight: 400;
     margin: 0px;
+}
+
+/*center content vertically*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 h2 {
